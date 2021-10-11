@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Нижняя Панель</title>
 </head>
 <body>
-    
+    <div class="arial">
+		<div class="panel">
+			<div class="left_block">
+				<div class="info_block">
+					<div class="info button"></div>
+				</div>
+				<div class="total_bet">
+					<div class="panel_bet">
+						<div class="panel_bet_minus">
+							<div class="button_minus button"></div>
+						</div>
+						<div class="info_bet">
+							<div class="panel_bet_text">total bet</div>
+							<div id="panel_bet_many" class="panel_bet_many">60</div>
+						</div>
+						<div class="panel_bet_plus">
+							<div class="button_plus button"></div>
+						</div>
+					</div>					
+				</div>
+				<div class="coin">
+					<div class="coin_text">coin</div>
+					<div id="coin_many"class="coin_many">4</div>
+				</div>
+			</div>
+			<div class="center_block">
+				<div class="good_luck">
+					<div class="good_luck_text">
+						good luck!
+					</div>
+				</div>
+			</div>
+			<div class="right_block">
+				<div class="turbo">
+					<input type="checkbox" id="turbo_button" class="turbo_button button">
+					<label for="turbo_button" class="label_turbo"></label>
+				</div>
+				<div class="auto">
+					<div class="auto_content">
+						<div class="auto_panel">
+							<div class="auto_panelka">
+								<ul class="panelka_list">
+									<li id="infinity_spins">until feature</li>
+									<li id="spins_25">25 spins</li>
+									<li id="spins_20">20 spins</li>
+									<li id="spins_15">15 spins</li>
+									<li id="spins_10">10 spins</li>
+									<li id="spins_5">5 spins</li>
+								</ul>
+							</div>
+						</div>
+						<div class="auto_button"></div>
+					</div>
+					
+				</div>
+				<div class="control">
+					<div class="control_panel">
+						<div class="spin"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<audio id="click" src="audio/Button_Click.wav"></audio>
+	<script src='js/script.js'></script>
 </body>
 </html>
