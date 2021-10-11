@@ -92,3 +92,113 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .info_block:active .info_text{
 	background-image:url(../img/info/info_sign2.png);
 }
+
+/* Стилизация панели total bet */
+.total_bet{
+	height:60px;
+	width: 180px;
+	padding: 5px;
+	margin: auto;
+}
+
+.panel_bet{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height:50px;
+	width: 180px;
+	margin-top: 10px;
+	background-image:url(../img/total_bet/bg_totalbet.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+/* Стилизация кнопки минус */
+.button_minus{
+	height: 45px;
+	width: 45px;
+	margin: 5px;
+	background-image: url(../img/total_bet/normal_minus.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.button_minus_disable{
+	height: 45px;
+	width: 45px;
+	margin: 5px;
+	background-image: url(../img/total_bet/disable_minus.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+/* Стилизация кнопки плюс */
+.button_plus{
+	height: 45px;
+	width: 45px;
+	margin: 5px;
+	background-image: url(../img/total_bet/normal_plus.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.button_plus_disable{
+	height: 45px;
+	width: 45px;
+	margin: 5px;
+	background-image: url(../img/total_bet/disable_plus.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.button_minus:hover{
+	background-image:url(../img/total_bet/hover_minus.png);
+}
+
+.button_minus:active{
+	background-image:url(../img/total_bet/click_minus.png);
+}
+
+.button_plus:hover{
+	background-image:url(../img/total_bet/hover_plus.png);
+}
+
+.button_plus:active{
+	background-image:url(../img/total_bet/click_plus.png);
+}
+
+/* Стилизация панели с информацией total bet */
+.info_bet{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.panel_bet_text{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight:bold;
+	text-transform: uppercase;
+	color:#ff6972;
+}
+
+.panel_bet_many{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #ffd100;
+	
+}
+
+.panel_bet_many::before{
+	content:'';
+	background-image:url(../img/total_bet/¥1.png);
+	background-repeat: no-repeat;
+	margin-top: 5px;
+	display:inline-block;
+	height: 15px;
+	width: 12px;
+}
