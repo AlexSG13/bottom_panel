@@ -263,3 +263,71 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
+
+/* Стилизация .right_block */
+.right_block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Стилизация переключателя .turbo */
+.turbo{
+	margin-top: 20px;
+	/* margin-right: 30px; */
+	height: 60px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.turbo_button{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/turbo/btn_of.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.turbo_button::after{
+	content:"";
+	display: inline-block;
+	height: 32px;
+	width: 76px;
+	margin-top: 15px;
+	background-image:url(../img/turbo/normal_turbo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+	cursor: pointer;
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+
+.turbo_button:checked::after{
+	transform: translateY(calc(-45%));
+	
+}
+
+.turbo_button:checked{
+	background-image:url(../img/turbo/btn_on.png);
+}
+
+.turbo_button:hover:after{
+	background-image:url(../img/turbo/hover_turbo.png);
+}
+
+.turbo_button:active:after{
+	background-image:url(../img/turbo/click_turbo.png);
+}
