@@ -35,3 +35,28 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+/* Стилизация блоков .arial .panel */
+
+.arial{
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	position: center;
+	background-color: rgb(47, 47, 56);
+}
+
+.panel{
+	display: flex;
+	align-items: center;
+	height:350px;
+	width: 1200px;
+	padding: 10px;
+	margin: auto;
+	background-image:url(../img/panel_bg.png);
+	justify-content: space-between;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
