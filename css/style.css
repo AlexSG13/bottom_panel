@@ -202,3 +202,41 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	height: 15px;
 	width: 12px;
 }
+/* Стилизация панели COIN */
+.coin{
+	height: 48px;
+	width: 100px;
+	margin-top: 22px;
+	margin-left: 10px;
+	background-image:url(../img/coin/bg_coin.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.coin_text{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 5px;
+	color:#ff6972;
+}
+
+.coin_many{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #ffd100;
+}
+
+.coin_many::before{
+	content:'';
+	background-image:url(../img/total_bet/¥1.png);
+	background-repeat: no-repeat;
+	display:inline-block;
+	height: 15px;
+	width: 12px;
+}
