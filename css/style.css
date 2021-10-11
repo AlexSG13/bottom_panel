@@ -331,3 +331,177 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .turbo_button:active:after{
 	background-image:url(../img/turbo/click_turbo.png);
 }
+
+/* Стилизация кнопка AUTO */
+.auto{
+	height: 220px;
+	width: 100px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 90px;;
+	
+}
+
+.auto_content{
+	width: 180px;
+	margin-bottom: 130px;
+}
+
+.auto_content:hover{
+	height: 180px;
+}
+
+.auto_panel{
+	height: 180px;
+	width: 180px;
+	position: absolute;
+	overflow: hidden;
+	top:20px;
+}
+
+.auto_panelka{
+	height: 180px;
+	width: 174px;
+	background-image:url(../img/auto/bg.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:absolute;
+	left:5px;
+	bottom:-160px;
+	transition: all 0.8s ease-in-out 0s;
+	position: absolute;
+	z-index: 1;
+	padding: 10px;
+}
+
+.panelka_list li{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+	color:#ffe400;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+.panelka_list li:hover{
+	color:white;
+}
+
+.auto_content:hover .auto_panelka{
+	transform: translateY(-80%);
+	transition: all 0.8s ease-in-out 0s;
+}
+
+.auto_button{
+	height: 56px;
+	width: 200px;
+	background-image:url(../img/auto/normal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top:166px;
+	z-index: 2;
+}
+
+.auto_button_stop{
+	height: 56px;
+	width: 200px;
+	background-image:url(../img/auto/normal_stop_blue.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top:166px;
+	z-index: 2;
+}
+
+.auto_button_stop:hover{
+	background-image:url(../img/auto/hover_stop_blue.png);
+}
+
+.auto_button_stop:active{
+	background-image: url(../img/auto/click_stop_blue.png);
+}
+
+.counter{
+	height: 30px;
+	width: 30px;
+	margin-left: 15px;
+	border-radius: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#ffe400;
+}
+
+.auto_button_stop_infinity{
+	height: 56px;
+	width: 200px;
+	background-image:url(../img/auto/normal_stop_red.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top:166px;
+	z-index: 2;
+}
+
+.auto_button_stop_infinity:hover{
+	background-image:url(../img/auto/hover_stop_red.png);
+}
+
+.auto_button_stop_infinity:active{
+	background-image: url(../img/auto/click_stop_red.png);
+}
+
+.counter_infinity{
+	height: 30px;
+	width: 30px;
+	margin-left: 15px;
+	border-radius: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	background-image:url(../img/auto/spincounter_red.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	animation: counter_infinity;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes counter_infinity{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+.auto_button:hover{
+	background-image:url(../img/auto/hover.png);
+}
+
+.auto_text{
+	padding-left: 35px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:#3d0000;
+}
