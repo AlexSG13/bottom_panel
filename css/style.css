@@ -592,3 +592,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		transform: rotate(-360deg);
 	}
 }
+
+/* Настройки запрета выделения текста */
+.auto_text, .panel_bet_text, .panel_bet_many, .coin_text, .coin_many, .good_luck_text, .counter, .panelka_list li{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none; 
+}
