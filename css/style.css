@@ -505,3 +505,90 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color:#3d0000;
 }
+
+/* Стилизация кнопки control */
+.control{
+	height: 100px;
+	width: 100px;
+	margin-right: 120px;
+	margin-bottom: 26px;
+	border-radius: 100%;
+	
+}
+
+.control_panel{
+	border-radius: 45%;
+	height: 150px;
+	width: 150px;
+	background-image:url(../img/spin/normal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 3;
+}
+
+.control_panel:hover{
+	background-image:url(../img/spin/hover.png);
+}
+
+.control_panel:active{
+	background-image:url(../img/spin/click.png);
+}
+
+.control_panel_stop{
+	border-radius: 45%;
+	height: 150px;
+	width: 150px;
+	background-image:url(../img/spin/stop_normal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 3;
+}
+
+.control_panel_stop:hover{
+	background-image:url(../img/spin/stop_normal_hover.png);
+}
+
+.control_panel_stop:active{
+	background-image:url(../img/spin/stop_normal_click.png);
+}
+
+.spin{
+	height: 100px;
+	width: 100px;
+	background-image:url(../img/spin/spin_sign2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	
+	animation: spin;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+.spin_hidden{
+	opacity: 0;
+}
+
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+
+		80%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(-360deg);
+	}
+}
