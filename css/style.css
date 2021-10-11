@@ -60,3 +60,35 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-position: center;
 }
 
+/* Стилизация .left_block */
+.left_block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Стилизация кнопки .info */
+.info{
+	height:60px;
+	width: 60px;
+	margin-left: 45px;
+	margin-top: 20px;
+	background-image:url(../img/info/info_normal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+
+.info:hover{
+	background-image:url(../img/info/info_hover.png);
+	
+}
+
+.info_block:active .info{
+	background-image:url(../img/info/info_click.png);
+}
+
+.info_block:active .info_text{
+	background-image:url(../img/info/info_sign2.png);
+}
