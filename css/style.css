@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 100%;
 	padding: 10px;
 	position: center;
-	background-color: rgb(47, 47, 56);
+	/* background-color: rgb(47, 47, 56); */
 }
 
 .panel{
@@ -180,7 +180,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .panel_bet_text{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight:bold;
 	text-transform: uppercase;
 	color:#ff6972;
@@ -221,6 +221,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .coin_text{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: bold;
+	font-size: 12px;
 	text-transform: uppercase;
 	margin-top: 5px;
 	color:#ff6972;
@@ -258,7 +259,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .good_luck_text{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 52px;
+	font-size: 46px;
 	color:#ffe400;
 	font-weight: bold;
 	text-transform: uppercase;
